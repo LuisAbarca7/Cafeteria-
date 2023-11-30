@@ -1,0 +1,18 @@
+@import mixins
+    
+.seccion-galeria
+    overflow: hidden
+    &__contenedor-imagen
+        width: 25%
+        float: left
+        @include movil(800px)
+            width: 50%      
+    &__imagen
+        width: 100%
+        vertical-align: top
+        opacity: 0.7
+        &:hover
+            opacity: 1
+            transition: all 0.3s ease
+        
+            

@@ -1,0 +1,60 @@
+@import mixins
+    
+.header
+    width: 100%
+    background: #281a0c
+    background-image: url("../img/bg.jpg")
+    background-size: cover
+    background-attachment: fixed
+    background-position: center 0
+    &__contenedor
+        position: relative
+        height: 700px
+        @include movil(800px)
+            position: static
+            height: auto
+    &__menu 
+        width: 100%
+        text-align: right
+        @include movil(800px)
+            text-align: center
+    &__contenedor-descripcion
+        color: #fff
+        position: absolute
+        width: 100%
+        top: 50%
+        margin-top: -52px
+        @include movil(800px)
+            position: static
+            margin: 100px 0
+
+.menu
+    &__a
+        color: #fff  
+        font-size: 20px
+        font-weight: 300 
+        display: inline-block
+        margin: 40px 20px
+        text-decoration: none
+        position: relative //Para animacion con jquery 
+        @include movil(800px)
+            margin: 10px 20px
+        &:hover
+            text-decoration: underline
+
+.contenedor-descripcion
+    &__nombre
+        font-size: 50px
+        font-weight: 600
+        @include movil(800px)
+            font-size: 30px
+    &__span
+        font-weight: 300
+    &__descripcion
+        font-weight: 300
+        font-size: 25px
+        font-style: italic
+        @include movil(800px)
+            font-size: 18px
+
+
